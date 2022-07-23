@@ -1,0 +1,16 @@
+{
+  "name": "pashamk",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ Makav3li94/pashamk",
+    "create-local": "graph create --node http://localhost:8020/ Makav3li94/pashamk",
+    "remove-local": "graph remove --node http://localhost:8020/ Makav3li94/pashamk",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 Makav3li94/pashamk"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.16.0",
+    "@graphprotocol/graph-ts": "0.15.0"
+  }
+}
